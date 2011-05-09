@@ -425,6 +425,14 @@ body {
   display: none;
 }
 
+#authenticated div.sf_admin_form .content_box_content .fr label {
+  background: url('/images/admin/fr.png') no-repeat 90% center;
+}
+
+#authenticated div.sf_admin_form .content_box_content .us label {
+  background: url('/images/admin/us.png') no-repeat 90% center;
+}
+
 #authenticated div.sf_admin_form #sf_fieldset_general .content_box_header {
   padding: 15px 20px;
   height: 20px;
