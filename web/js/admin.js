@@ -10,6 +10,7 @@ jQuery(document).ready(function() {
   displayTooltip();
   
   displaySubforms();
+  displayLanguage();
   
   jQuery(window).resize(function() {
     resizeSidebar();
@@ -120,4 +121,19 @@ function displaySubforms()
   jQuery('.sf_admin_form_row label').click(function() {
     jQuery(this).siblings('div.content').children('div.embedForm').toggle('slow');
   });
+}
+
+function displayLanguage()
+{
+  jQuery(document).ready(function() {
+    jQuery('#authenticated div.sf_admin_form .content_box_content .us').hide();
+  });
+  
+  jQuery('.language .us').click(function() {
+    jQuery('#authenticated div.sf_admin_form .content_box_content .us').slideToggle();
+  }) 
+  
+  jQuery('.language .fr').click(function() {
+    jQuery('#authenticated div.sf_admin_form .content_box_content .fr').slideToggle();
+  })
 }

@@ -425,6 +425,25 @@ body {
   display: none;
 }
 
+.language ul {
+  margin: 0;
+}
+
+.language li {
+  cursor: pointer;
+  float: left;
+}
+
+.language .fr {
+  background: url('/images/admin/fr.png') no-repeat;
+  text-indent: -1984px;
+}
+
+.language .us {
+  background: url('/images/admin/us.png') no-repeat;
+  text-indent: -1984px;
+}
+
 #authenticated div.sf_admin_form .content_box_content .fr label {
   background: url('/images/admin/fr.png') no-repeat 90% center;
 }
