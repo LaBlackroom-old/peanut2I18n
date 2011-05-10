@@ -1,6 +1,15 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+localized_homepage:
+  url:   /:sf_culture/
+  param: { module: items, action: index }
+  requirements: { sf_culture: (?:fr|en) }
+  
+change_language:
+  url:   /change_language
+  param: { module: language, action: changeLanguage }
+
 # default rules
 homepage:
   url:   /

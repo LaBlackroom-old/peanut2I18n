@@ -79,6 +79,9 @@ install_git peanutFormPlugin git://github.com/pocky/peanutFormPlugin.git
 # peanutSeoPlugin
 install_git peanutSeoPlugin git://github.com/pocky/peanutSeoPlugin.git
 
+# sfFormExtraPlugin
+install_git sfFormExtraPlugin git://github.com/diem-project/sfFormExtraPlugin.git
+
 cd ../..
 
 

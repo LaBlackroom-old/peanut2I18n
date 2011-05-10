@@ -58,7 +58,9 @@
 
         <footer>
           <nav>
-           <?php include_component('items', 'footerMenu') ?>
+            <?php include_component('items', 'footerMenu') ?>
+            
+            <?php include_component('language', 'language') ?>
           </nav>
         </footer>
 

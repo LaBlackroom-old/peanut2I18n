@@ -22,6 +22,7 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins(array(
         'sfDoctrinePlugin',
         'sfTaskExtraPlugin',
+        'sfFormExtraPlugin',
         'peanutHtml5Plugin',
         'sfDoctrineGuardPlugin',
         'csDoctrineActAsSortablePlugin',
