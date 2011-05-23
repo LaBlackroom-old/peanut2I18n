@@ -118,6 +118,18 @@ function displayTooltip()
     }
 
   });
+  
+  jQuery('.sf_admin_form form .form-row label').mouseover(function() {
+    var content = jQuery(this).siblings('div.help').html();
+
+    if(content != null)
+    {
+      jQuery(this).tipTip({
+        'content': '<p>' + content + '</p>'
+      });
+    }
+
+  });
 }
 
 function displaySubforms()
@@ -131,12 +143,10 @@ function displaySubforms()
 
 function displayLanguage()
 {
-  jQuery(document).ready(function() {
-    jQuery('#authenticated div.sf_admin_form .content_box_content .us').hide();
-  });
+  jQuery('#authenticated div.sf_admin_form .content_box_content .en').hide();
   
-  jQuery('.language .us').click(function() {
-    jQuery('#authenticated div.sf_admin_form .content_box_content .us').slideToggle();
+  jQuery('.language .en').click(function() {
+    jQuery('#authenticated div.sf_admin_form .content_box_content .en').slideToggle();
   }) 
   
   jQuery('.language .fr').click(function() {
