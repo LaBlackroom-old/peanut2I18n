@@ -68,7 +68,7 @@ install_git sfDoctrineGuardPlugin git://github.com/pocky/sfDoctrineGuardPlugin.g
 install_git sfTaskExtraPlugin git://github.com/annismckenzie/sfTaskExtraPlugin.git master
 
 # peanutCorporatePlugin
-install_git peanutCorporatePlugin git://github.com/pocky/peanutCorporatePlugin.git master
+install_git peanutCorporatePlugin git://github.com/pocky/peanutCorporatePlugin.git i18n
 
 # csDoctrineActAsSortablePlugin
 install_git csDoctrineActAsSortablePlugin git://github.com/pocky/csDoctrineActAsSortablePlugin.git master
@@ -80,10 +80,10 @@ install_git sfCKEditorPlugin git://github.com/weaverryan/sfCKEditorPlugin.git ma
 install_git peanutFormPlugin git://github.com/pocky/peanutFormPlugin.git master
 
 # peanutSeoPlugin
-install_git peanutSeoPlugin git://github.com/pocky/peanutSeoPlugin.git master
+install_git peanutSeoPlugin git://github.com/pocky/peanutSeoPlugin.git i18n
 
 # sfFormExtraPlugin
-install_git sfFormExtraPlugin git://github.com/diem-project/sfFormExtraPlugin.git
+install_git sfFormExtraPlugin git://github.com/diem-project/sfFormExtraPlugin.git master
 
 cd ../..
 
