@@ -38,24 +38,37 @@ class dashboardComponents extends sfComponents
   
   public function executeAnalytics(sfWebRequest $request)
   {
-    if(!sfConfig::get('app_google_mail'))
-    {
-      $this->visits = '0';
-      $this->visitors = '0';
-      $this->pages = '0';
-    }
-    else
+    if(peanutConfig::get('google_tracking'))
     {
       $ga = new GoogleAnalyticsAPI(
-            sfConfig::get('app_google_mail'),
-            sfConfig::get('app_google_password'),
-            sfConfig::get('app_google_tracking'),
+            peanutConfig::get('google_mail'),
+            peanutConfig::get('google_password'),
+            peanutConfig::get('google_tracking'),
             date('Y-m-d', strtotime('-1 day'))
       );
 
       $this->visits = $ga->getMetric('visits');
       $this->visitors = $ga->getMetric('visitors');
       $this->pages = $ga->getMetric('pageviews');
+      
+    }
+    else
+    {
+      return sfView::NONE; 
+    }
+    
+  }
+  
+  public function executeFeed(sfWebRequest $request)
+  {
+    if(peanutConfig::get('news_feed'))
+    {
+      $items = simplexml_load_file(peanutConfig::get('news_feed'));
+      $this->items = $items;
+    }
+    else
+    {
+      return sfView::NONE;
     }
     
   }

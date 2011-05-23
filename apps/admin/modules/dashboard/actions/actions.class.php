@@ -12,7 +12,7 @@ class dashboardActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $weather = new GoogleWeatherAPI(sfConfig::get('app_google_city'), $this->getUser()->getCulture());
+    $weather = new GoogleWeatherAPI(peanutConfig::get('meteo'), substr($this->getUser()->getCulture(), 0, 2));
     if($weather->isFound())
     {
       $this->weather = $weather->getCurrent();

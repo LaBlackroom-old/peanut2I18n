@@ -12,14 +12,14 @@
 
     <title>
     <?php if (!include_slot('title')): ?>
-      <?php echo sfConfig::get('app_meta_title', 'peanut :: another CMS on symfony') ?>
+      <?php echo peanutConfig::get('meta_title') ?>
     <?php endif; ?>
     </title>
 
-    <meta name="description" content="<?php if(!include_slot('description', sfConfig::get('app_meta_description', 'The demo site for peanut'))) { get_slot('description'); } ?>">
-    <meta name="keywords" content="<?php if(!include_slot('keywords', sfConfig::get('app_meta_keywords', 'peanut, symfony, cms'))) { get_slot('keywords'); } ?>">
-    <meta name="robots" content="<?php if(!include_slot('robots', sfConfig::get('app_meta_robots', 'index, follow'))) { get_slot('robots'); } ?>">
-    <meta name="language" content="<?php if(!include_slot('language', sfConfig::get('app_meta_language', 'en_US'))) { get_slot('language'); } ?>">
+    <meta name="description" content="<?php if(!include_slot('description', peanutConfig::get('meta_description'))) { get_slot('description'); } ?>">
+    <meta name="keywords" content="<?php if(!include_slot('keywords', peanutConfig::get('meta_keywords'))) { get_slot('keywords'); } ?>">
+    <meta name="robots" content="<?php if(!include_slot('robots', peanutConfig::get('meta_robots'))) { get_slot('robots'); } ?>">
+    <meta name="language" content="<?php if(!include_slot('language', peanutConfig::get('meta_language'))) { get_slot('language'); } ?>">
 
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -39,7 +39,7 @@
         <header>
           <h1>
             <a href="<?php echo url_for('@homepage') ?>" title="<?php __('Back to homepage') ?>">
-              <?php echo sfConfig::get('app_site_name', 'myWebsite') ?>
+              <?php echo peanutConfig::get('site_name') ?>
             </a>
           </h1>
         </header>
@@ -75,5 +75,15 @@
 
 
     <?php include_html5_javascripts() ?>
+    
+    <?php if(peanutConfig::get('google_guid')): ?>
+    <script>
+      var _gaq=[['_setAccount','<?php echo peanutConfig::get('google_guid') ?>'],['_trackPageview'],['_trackPageLoadTime']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <?php endif; ?>
+    
   </body>
 </html>
