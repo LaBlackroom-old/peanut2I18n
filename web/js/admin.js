@@ -18,6 +18,14 @@ jQuery(document).ready(function() {
     resizeAside();
     resizeFieldsetContent();
   });
+  
+  jQuery('.sf_admin_form_field_peanutSeo_title').keyup(function(){
+    limitChars('.sf_admin_form_field_peanutSeo_title', 195);
+  })
+  
+  jQuery('.sf_admin_form_field_peanutSeo_description').keyup(function(){
+    limitChars('.sf_admin_form_field_peanutSeo_description', 255);
+  })
 
 });
 
@@ -152,4 +160,13 @@ function displayLanguage()
   jQuery('.language .fr').click(function() {
     jQuery('#authenticated div.sf_admin_form .content_box_content .fr').slideToggle();
   })
+}
+
+function limitChars(containerDiv, limit)
+{
+  var input = jQuery(containerDiv).children('input');
+  var text = input.val();
+  var length = text.length;
+  
+  jQuery(containerDiv).children('.count').children('.counter').html((limit - length));
 }
