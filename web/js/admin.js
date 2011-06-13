@@ -34,6 +34,8 @@ jQuery(document).ready(function() {
   jQuery('.sf_admin_form_field_peanutSeo_description_en').keyup(function(){
     limitChars('.sf_admin_form_field_peanutSeo_description_en', 255);
   })
+  
+  xfn();
 
 });
 
@@ -177,4 +179,19 @@ function limitChars(containerDiv, limit)
   var length = text.length;
   
   jQuery(containerDiv).children('.count').children('.counter').html((limit - length));
+}
+
+function xfn()
+{
+  if(jQuery('input#peanut_link_peanutXfn_me').is(':checked')) {
+    jQuery('.sf_admin_form_field_peanutXfn :input:not(input#peanut_link_peanutXfn_me)').attr('disabled', 'disabled');
+  }
+    
+  jQuery('input#peanut_link_peanutXfn_me').click(function() {
+    if(jQuery('input#peanut_link_peanutXfn_me').is(':checked')) {
+      jQuery('.sf_admin_form_field_peanutXfn :input:not(input#peanut_link_peanutXfn_me)').attr('disabled', 'disabled');
+    } else {
+      jQuery('.sf_admin_form_field_peanutXfn :input').removeAttr('disabled');
+    }
+  });
 }
