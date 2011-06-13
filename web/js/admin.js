@@ -19,12 +19,12 @@ jQuery(document).ready(function() {
     resizeFieldsetContent();
   });
   
-  jQuery('.sf_admin_form_field_peanutSeo_title_fr').keyup(function(){
-    limitChars('.sf_admin_form_field_peanutSeo_title_fr', 195);
+  jQuery('.sf_admin_form_field_peanutSeo_title').keyup(function(){
+    limitChars('.sf_admin_form_field_peanutSeo_title', 195);
   })
   
-  jQuery('.sf_admin_form_field_peanutSeo_description_fr').keyup(function(){
-    limitChars('.sf_admin_form_field_peanutSeo_description_fr', 255);
+  jQuery('.sf_admin_form_field_peanutSeo_description').keyup(function(){
+    limitChars('.sf_admin_form_field_peanutSeo_description', 255);
   })
   
   jQuery('.sf_admin_form_field_peanutSeo_title_en').keyup(function(){
@@ -34,7 +34,7 @@ jQuery(document).ready(function() {
   jQuery('.sf_admin_form_field_peanutSeo_description_en').keyup(function(){
     limitChars('.sf_admin_form_field_peanutSeo_description_en', 255);
   })
-  
+
   xfn();
 
 });
