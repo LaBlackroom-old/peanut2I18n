@@ -461,6 +461,10 @@ body {
 .language li {
   cursor: pointer;
   float: left;
+  list-style-position: inside;
+  list-style-type: none;
+  width: 16px;
+  margin: 0px 1px;
 }
 
 .language .fr {
