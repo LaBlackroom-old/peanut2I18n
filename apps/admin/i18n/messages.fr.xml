@@ -5,6 +5,10 @@
     <header/>
     <body>
       <trans-unit>
+        <source>Project per page</source>
+        <target>Nombre de projets par page (portfolio)</target>
+      </trans-unit>
+      <trans-unit>
         <source>Homepage</source>
         <target>Page d'accueil</target>
       </trans-unit>

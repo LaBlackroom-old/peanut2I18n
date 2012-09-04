@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>Keywords</source>
+        <target>Mots-clé</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Index</source>
+        <target>Indexation</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Follow</source>
+        <target>Suivi des liens</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

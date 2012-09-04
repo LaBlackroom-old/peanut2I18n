@@ -13,10 +13,11 @@ default:
     viewport:      width=device-width, initial-scale=1.0
 
   stylesheets:
-    - main.css?v=2:     { media: 'screen, projection' }
-    - handheld.css?v=2: { media: 'handheld' }
+    - main.css?v=2:                                 { media: 'screen, projection' }
+    - /ndPortfolioI18nPlugin/css/shadowbox.css:     { media: 'screen, projection' }
+    - handheld.css?v=2:                             { media: 'handheld' }
 
-  javascripts:
+  javascripts: [/ndPortfolioI18nPlugin/js/jquery.cycle.all.js, /ndPortfolioI18nPlugin/js/shadowbox.js]
     
 
   has_layout:      true

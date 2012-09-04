@@ -46,8 +46,10 @@
         <h2><?php echo __('functionnalities') ?></h2>
         <?php include_component('adminMenu', 'menu') ?>
         <?php include_component('adminItem', 'menu') ?>
+        <?php include_component('adminObject', 'menu') ?>
+        <?php include_component('adminPortfolio', 'menu') ?>
         
-        <?php if($sf_user->hasPermission('admin')): ?>
+        <?php if($sf_user->hasPermission('1')): ?>
 
         <nav <?php if($sf_context->getModuleName() == 'sfGuardUser'): echo 'class="selected"'; endif; ?>>
           <h3>
