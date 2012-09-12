@@ -33,7 +33,8 @@ class ProjectConfiguration extends sfProjectConfiguration
         'ndMediaI18nPlugin',
         'ndPortfolioI18nPlugin',
         'sfDoctrineActAsTaggablePlugin',
-        'sfImageTransformPlugin'
+        'sfImageTransformPlugin',
+        'ndCategoriesI18nPlugin'
     ));
     
     $this->dispatcher->connect('context.load_factories', array($this, 'listenToLoadFactoriesEvent'));

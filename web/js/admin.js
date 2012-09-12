@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
   displayTooltip();
   
   displaySubforms();
-  displayLanguage();
+  //displayLanguage();
   
   jQuery(window).resize(function() {
     resizeSidebar();
@@ -161,10 +161,10 @@ function displaySubforms()
 
 function displayLanguage()
 {
-  jQuery('#authenticated div.sf_admin_form .content_box_content .en').hide();
+  jQuery('#authenticated div.sf_admin_form .content_box_content .gb').hide();
   
-  jQuery('.language .en').click(function() {
-    jQuery('#authenticated div.sf_admin_form .content_box_content .en').slideToggle();
+  jQuery('.language .gb').click(function() {
+    jQuery('#authenticated div.sf_admin_form .content_box_content .gb').slideToggle();
   }) 
   
   jQuery('.language .fr').click(function() {

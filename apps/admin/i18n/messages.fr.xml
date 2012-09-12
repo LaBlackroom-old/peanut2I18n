@@ -5,6 +5,18 @@
     <header/>
     <body>
       <trans-unit>
+        <source>About your language</source>
+        <target>Les langues du site</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Your Language</source>
+        <target>Vos langues</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Select the languages you want to add to your site.</source>
+        <target>Selectionnez les langues que vous souhaitez ajouter à votre site.</target>
+      </trans-unit>
+      <trans-unit>
         <source>Project per page</source>
         <target>Nombre de projets par page (portfolio)</target>
       </trans-unit>

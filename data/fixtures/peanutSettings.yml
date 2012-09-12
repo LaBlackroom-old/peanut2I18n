@@ -50,4 +50,7 @@ peanutSettings:
   peanutSettings_17:
     name: meta_robots
     value: 'index, follow'
+  peanutSettings_18:
+    name: project_per_page
+    value: 2
   

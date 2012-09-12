@@ -9,6 +9,27 @@
 
 class BaseSettingsActions extends sfActions
 {
+  public function executeLang(sfWebRequest $request)
+  {
+    $this->form = new langSettingsForm();
+    
+    if($request->isMethod('post'))
+    { 
+      $this->form->bind($request->getParameter('settings'));
+      
+      if($this->form->isValid())
+      {
+        $lang = array(
+          'lang'  => $this->form->getValue('lang'),
+        );
+        peanutConfig::set('lang', serialize($lang));
+        
+      }
+
+    }
+  }
+  
+  
   public function executeSociety(sfWebRequest $request)
   {
     $this->form = new societySettingsForm();

@@ -34,9 +34,25 @@ abstract class PluginpeanutSeoForm extends BasepeanutSeoForm
     
     $this->widgetSchema->setFormFormatterName('div');
     
-    $this->embedI18n(array('fr', 'en'));
-    $this->widgetSchema->setLabel('fr', 'Français');
-    $this->widgetSchema->setLabel('en', 'English');
+    /* Construction des langues du site */
+    $lang = unserialize(peanutConfig::get('lang'));
+    $default = array();
+    
+    if($lang['lang']){
+      foreach($lang['lang'] as $key => $value){
+        $default[$key] = strtolower($value); 
+      } 
+      
+      $this->embedI18n($default);
+
+      foreach($default as $lang){
+        $this->widgetSchema->setLabel($lang, 'language-' . $lang);
+      }
+    }
+    else{
+      $this->embedI18n(array('fr'));
+      $this->widgetSchema->setLabel('fr', 'Français');
+    }
   }
 
 }

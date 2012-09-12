@@ -48,6 +48,7 @@
         <?php include_component('adminItem', 'menu') ?>
         <?php include_component('adminObject', 'menu') ?>
         <?php include_component('adminPortfolio', 'menu') ?>
+        <?php include_component('adminCategories', 'menu') ?>
         
         <?php if($sf_user->hasPermission('1')): ?>
 
