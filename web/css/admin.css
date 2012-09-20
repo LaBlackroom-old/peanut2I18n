@@ -766,6 +766,17 @@ body {
   text-decoration: none;
 }
 
+
+
+#authenticated div.sf_admin_form #sf_fieldset_content .checkbox_list input{
+  width: 5%;
+}
+
+#authenticated div.sf_admin_form #sf_fieldset_content .checkbox_list li{
+  padding: 5px;
+}
+
+
 /*
  * media queries for responsive design
  * these follow after primary styles so they will successfully override.

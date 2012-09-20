@@ -12,6 +12,7 @@ class myUser extends sfBasicSecurityUser
     }
     
     $this->setAttribute('first_request', $boolean);
+    $this->setCulture('en');
     
   }
   

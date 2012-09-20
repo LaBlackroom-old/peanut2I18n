@@ -4,7 +4,7 @@
 localized_homepage:
   url:   /:sf_culture/
   param: { module: items, action: index }
-  requirements: { sf_culture: (?:fr|en) }
+  requirements: { }
   
 change_language:
   url:   /change_language
