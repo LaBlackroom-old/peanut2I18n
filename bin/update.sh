@@ -86,6 +86,21 @@ install_git peanutSeoPlugin git://github.com/LaBlackroom/peanutSeoPlugin.git i18
 # sfFormExtraPlugin
 install_git sfFormExtraPlugin git://github.com/diem-project/sfFormExtraPlugin.git master
 
+# ndMediaI18nPlugin
+install_git ndMediaI18nPlugin git://git.rufus.lan/plugins-symfony/ndmediai18nplugin.git  master
+
+# ndPortfolioI18nPlugin
+install_git ndPortfolioI18nPlugin git://git.rufus.lan/plugins-symfony/ndportfolioi18nplugin.git master
+
+# sfDoctrineActAsTaggablePlugin
+install_git sfDoctrineActAsTaggablePlugin git://git.rufus.lan/plugins-symfony/sfdoctrineactastaggableplugin.git master
+
+# sfImageTransformPlugin
+install_git sfImageTransformPlugin git://git.rufus.lan/plugins-symfony/sfimagetransformplugin.git master
+
+# ndCategoriesI18nPlugin
+install_git ndCategoriesI18nPlugin git://git.rufus.lan/plugins-symfony/ndcategoriesi18nplugin.git master
+
 cd ../..
 
 
