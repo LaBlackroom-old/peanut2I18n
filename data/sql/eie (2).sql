@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Serveur: localhost
--- Généré le : Jeu 20 Septembre 2012 à 12:08
+-- Généré le : Ven 21 Septembre 2012 à 14:23
 -- Version du serveur: 5.1.63
 -- Version de PHP: 5.3.5-1ubuntu7.11
 
@@ -125,6 +125,68 @@ INSERT INTO `media_object_translation` (`id`, `name`, `description`, `alternativ
 (2, 'Pho2', '', '', 'fr', 'pho2'),
 (3, 'Pho3', '', '', 'en', 'pho3-1'),
 (3, 'Pho3', '', '', 'fr', 'pho3');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `migration_version`
+--
+
+CREATE TABLE IF NOT EXISTS `migration_version` (
+  `version` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `migration_version`
+--
+
+INSERT INTO `migration_version` (`version`) VALUES
+(2);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `nd_banner`
+--
+
+CREATE TABLE IF NOT EXISTS `nd_banner` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `picture` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `link` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `active` tinyint(1) DEFAULT '1',
+  `position` bigint(20) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `nd_banner_position_sortable_idx` (`position`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `nd_banner`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `nd_banner_translation`
+--
+
+CREATE TABLE IF NOT EXISTS `nd_banner_translation` (
+  `id` bigint(20) NOT NULL DEFAULT '0',
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `lang` char(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `slug` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`,`lang`),
+  UNIQUE KEY `nd_banner_translation_sluggable_idx` (`slug`),
+  KEY `nd_banner_translation_id_idx` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contenu de la table `nd_banner_translation`
+--
+
 
 -- --------------------------------------------------------
 
@@ -608,7 +670,7 @@ CREATE TABLE IF NOT EXISTS `sf_guard_user` (
 --
 
 INSERT INTO `sf_guard_user` (`id`, `first_name`, `last_name`, `email_address`, `username`, `algorithm`, `salt`, `password`, `is_active`, `is_super_admin`, `last_login`, `created_at`, `updated_at`) VALUES
-(1, 'Alexandre', 'Balmes', 'admin@peanut.local', 'admin', 'sha1', 'baba31155ff078e4a869d7e2c88c8cca', '5cf270d479fe4ab2cc747e704e68e572850caee7', 1, 1, '2012-09-17 14:58:55', '2011-03-15 12:06:22', '2012-09-17 14:58:55');
+(1, 'Alexandre', 'Balmes', 'admin@peanut.local', 'admin', 'sha1', 'baba31155ff078e4a869d7e2c88c8cca', '5cf270d479fe4ab2cc747e704e68e572850caee7', 1, 1, '2012-09-21 11:57:36', '2011-03-15 12:06:22', '2012-09-21 11:57:36');
 
 -- --------------------------------------------------------
 
@@ -719,6 +781,12 @@ ALTER TABLE `media_object`
 --
 ALTER TABLE `media_object_translation`
   ADD CONSTRAINT `media_object_translation_id_media_object_id` FOREIGN KEY (`id`) REFERENCES `media_object` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Contraintes pour la table `nd_banner_translation`
+--
+ALTER TABLE `nd_banner_translation`
+  ADD CONSTRAINT `nd_banner_translation_id_nd_banner_id` FOREIGN KEY (`id`) REFERENCES `nd_banner` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `nd_categories_translation`
