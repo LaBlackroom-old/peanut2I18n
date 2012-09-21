@@ -1,0 +1,43 @@
+ul,
+ol {
+	padding-left: 0;
+	list-style-position: inside;
+
+	&.unstyled {
+		list-style-type: none;
+	}
+
+	ul,
+	ol {
+		padding-left: 20px;
+	}
+}
+
+dl {
+
+	dt {
+		.bold;
+	}
+
+	dd {
+		margin-bottom: @baseLineHeight / 2;
+		margin-left: 10px;
+	}
+
+  &.inline {
+
+    display: block;
+
+    dt {
+      float: left;
+      text-align: right;
+      width: 30%;
+      margin-right: 2%;
+    }
+
+    dd {
+      margin-left: 30%;
+    }
+
+  }
+}

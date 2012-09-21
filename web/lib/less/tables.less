@@ -1,0 +1,46 @@
+table {
+	margin: 10px 0;
+
+	th,
+	td {
+		padding: 8px;
+		.left;
+	}
+
+	caption {
+		caption-side: bottom;
+		.bold;
+		.italic;
+		font-size: .8em;
+	}
+}
+
+table.table {
+	th,
+	td {
+		border-bottom: 1px solid @grayLight;
+	}
+}
+
+table.table-stripped {
+	tbody {
+		tr:nth-child(odd) {
+			background-color: @grayLighter;
+		}
+	}
+}
+
+table.table-condensed {
+	th,
+	td {
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+}
+
+table.table-bordered {
+	th,
+	td {
+		border: 1px solid @grayLight;
+	}
+}

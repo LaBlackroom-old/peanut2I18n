@@ -1,0 +1,21 @@
+.column(@column: 1) {
+  width: (((@column-width * @column) + (@gutter-width * (@column - 1))) / @gridsystem-target) * @total-width;
+}
+.push(@offset:1) {
+	margin-left: (((@column-width * @offset) + (@gutter-width * @offset + (@gutter-width / 2))) / @gridsystem-target) * @total-width;
+}
+.pull(@offset:1) {
+	margin-right: (((@column-width * @offset) + (@gutter-width * @offset + (@gutter-width / 2))) / @gridsystem-target) * @total-width;
+}
+
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
