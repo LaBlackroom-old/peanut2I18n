@@ -1,0 +1,168 @@
+form {
+
+	label {
+		.show;
+	}
+
+	input,
+	textarea,
+	select {
+		width: inherit;
+		border: 1px solid @grayLighter - 20% !important;
+		.border-radius(3px);
+		padding: 0 3px;
+	}
+
+	input,
+	textarea {
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+		-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+		-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+		-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+		transition: border linear 0.2s, box-shadow linear 0.2s;
+
+		&:focus,
+		&.focus {
+			border-color: rgba(82, 168, 236, 0.8);
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+			outline: 0;
+		}
+	}
+
+	input {
+		height: @baseFontSize * 1.8;
+
+		&#text {
+			font-size: inherit;
+		}
+
+		&:default:not['submit'],
+		&.default {
+			border-color: #ff017d !important;
+		}
+
+		&:required,
+		&.required,
+		&:invalid,
+		&.invalid {
+			border-color: @red !important;
+		}
+
+		&:optional,
+		.optional {
+			border-color: @yellow;
+		}
+
+		&:valid,
+		.valid {
+			border-color: @green;
+		}
+
+		&:disabled,
+		&.disabled {
+			background-color: @grayLighter + 10%;
+			border-color:  @grayLighter - 20%;
+		}
+		
+		&[type="file"] {
+			padding: 6px 3px 0;
+		}
+
+		&[type="radio"],
+		&[type="checkbox"] {
+			height: 1em;
+		}
+
+	  &[type="file"] {
+	    font-size: 12px;
+	  }
+	}
+
+	button {
+		height: @baseFontSize * 1.8;
+	}
+
+	select,
+	textarea {
+		padding: 5px 3px;
+	}
+
+  select {
+    font-size: .8em;
+  }
+
+	.help {
+		font-size: .9em;
+		color: @gray;
+	}
+
+	fieldset {
+		border: 1px solid @grayLighter - 20%;
+		background-color: @grayLighter + 10%;
+		.border-radius;
+		padding: 5px;
+		width: inherit;
+
+		&.naked {
+			border: 0;
+			background-color: inherit;
+		}
+
+		&.inline {
+			
+			label {
+				float: left;
+				text-align: right;
+				.column(4);
+			}
+
+			input {
+				.push(1);
+			}
+
+			span {
+				display: block;
+				.push(5);
+			}
+		}
+
+		.form-actions {
+			border-top: 1px solid @grayLighter - 20%;
+			background-color: @grayLighter + 10%;
+			padding: (@baseLineHeight / 2) 0;
+			text-align: center;
+
+			button,
+			input {
+				width: 100px;
+				float: none;
+
+				&.blue,
+				&.red,
+				&.green {
+					color: @white !important;
+				}
+
+				&.blue {
+					text-shadow: 0 1px 0 #2F5BB7 !important;
+				}
+
+				&.red {
+					text-shadow: 0 1px 0 #B0281A !important;
+				}
+
+				&.green {
+					text-shadow: 0 1px 0 #2D6200 !important;
+				}
+
+				&.big-button {
+					font-size: 1em;
+					height: 40px !important;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+// Float and Text alignment
+.left         	{ text-align: left; }
+.right        	{ text-align: right; }
+.center       	{ text-align: center; }
+.justify      	{ text-align: justify; }
+
+.float-left    	{ float: left; }
+.float-right   	{ float: right; }
+.float-center  	{ margin: 0 auto; }
+.fixed			{ float: none; }
+
+// Display
+.hide         	{ display: none; }
+.show         	{ display: block; }
+.invisible    	{ visibility: hidden; }
+.inline       	{ display: inline; }
+
+// Transformation
+.lowercase    	{ text-transform: lowercase; }
+.uppercase    	{ text-transform: uppercase; }
+.capitalize		{ text-transform: capitalize; }
+
+// Decoration
+.underline 	  	{ text-decoration: underline; }
+.none			{ text-decoration: none; }
+
+//position
+.relative		{ position: relative; }
+.absolute		{ position: absolute; }
+
+//font weight
+.lighter {
+	font-weight: 100;
+
+	b,
+	strong {
+		font-weight: 300;
+	}
+}
+
+.light {
+	font-weight: 300;
+
+	b,
+	strong {
+		font-weight: 500;
+	}
+}
+
+// Font-weight
+.normal         { font-weight: 500; }
+.bold			{ font-weight: 700; }
+.bolder         { font-weight: 900; }
+
+// Font-style
+.italic			{ font-style: italic; }
+
+
+// Spaces
+.no-space 		{ 
+	* {
+		margin: 0;
+		padding: 0;
+		line-height: @baseLineHeight;
+	}
+}
