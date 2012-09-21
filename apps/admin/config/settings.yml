@@ -33,7 +33,7 @@ all:
 
     # Enable the database manager
     use_database:           true
-    enabled_modules:        [sfGuardAuth, sfGuardGroup, sfGuardUser, sfGuardPermission, sfGuardForgotPassword, adminItem, adminLink, adminMenu, adminPage, adminAlbum, adminObject, adminPicture, adminVideo, adminPortfolio, adminCategories]
+    enabled_modules:        [sfGuardAuth, sfGuardGroup, sfGuardUser, sfGuardPermission, sfGuardForgotPassword, adminItem, adminLink, adminMenu, adminPage, adminAlbum, adminObject, adminPicture, adminVideo, adminPortfolio, adminCategories, adminBanner]
     
     i18n:                   on
     default_culture:        fr

@@ -101,6 +101,10 @@ install_git sfImageTransformPlugin git://git.rufus.lan/plugins-symfony/sfimagetr
 # ndCategoriesI18nPlugin
 install_git ndCategoriesI18nPlugin git://git.rufus.lan/plugins-symfony/ndcategoriesi18nplugin.git master
 
+# ndBannerI18nPlugin
+install_git ndBannerI18nPlugin git://git.rufus.lan/plugins-symfony/ndbanneri18nplugin.git master
+
+
 cd ../..
 
 
