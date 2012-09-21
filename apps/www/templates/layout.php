@@ -90,25 +90,7 @@
       <section id="main" class="alignLeft clearfix" role="main">
         
         <div class="banner">
-          <div class="slider-wrapper">
-            <div id="slider" class="nivoSlider">
-              <div class="slide_content">
-                <div class="slider_content nivo-caption">
-                  <div class="title nivo-caption">EIE Global is...</div>
-                  <div class="desc nivo-caption"><p>Leader in global exhibit & event management for exhibitors and organizers. </p><p>We build customized solutions tailored to your objectives, strategy and budget. </p><p>Through our global service platform, we guarantee your event program will be consistent, profitable and executed seamlessly.</p> </div>
-                </div>
-                <img src="/images/banniere.png" alt="" />
-              </div>
-              <div>
-                <div class="slider_content">
-                  <div class="title">Deuxieme slide...</div>
-                  <div class="desc"><p>Leader in global exhibit & event management for exhibitors and organizers. </p><p>We build customized solutions tailored to your objectives, strategy and budget. </p><p>Through our global service platform, we guarantee your event program will be consistent, profitable and executed seamlessly.</p> </div>
-                </div>
-                <img src="/images/banniere2.gif" alt="" />
-              </div>
-            </div>
-          </div>
-
+          <?php include_partial('banner/bannerShow', array()) ?>
         </div>
         
         
