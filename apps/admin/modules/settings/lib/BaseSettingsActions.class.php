@@ -29,6 +29,22 @@ class BaseSettingsActions extends sfActions
     }
   }
   
+  public function executeFirstlang(sfWebRequest $request)
+  {
+    $this->form = new firstlangSettingsForm();
+    
+    if($request->isMethod('post'))
+    { 
+      $this->form->bind($request->getParameter('settings'));
+      
+      if($this->form->isValid())
+      {
+        peanutConfig::set('firstlang', $this->form->getValue('firstlang'));
+      }
+
+    }
+  }
+  
   
   public function executeSociety(sfWebRequest $request)
   {

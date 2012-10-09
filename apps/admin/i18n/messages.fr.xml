@@ -209,8 +209,22 @@
         <target>Vietnamien</target>
       </trans-unit>
       
-      
-      
+      <trans-unit>
+        <source>Select the language that is displayed first for the visitor.</source>
+        <target>Sélectionner le langage qui s'affiche en premier pour le visiteur</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The First Language</source>
+        <target>Première Langue</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Firstlang</source>
+        <target>Première Langue</target>
+      </trans-unit>
+      <trans-unit>
+        <source>About the first language</source>
+        <target>Les langues du site</target>
+      </trans-unit>
       
       <trans-unit>
         <source>Lang</source>

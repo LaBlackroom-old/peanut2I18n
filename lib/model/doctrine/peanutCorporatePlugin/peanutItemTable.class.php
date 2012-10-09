@@ -16,4 +16,34 @@ class peanutItemTable extends PluginpeanutItemTable
     {
         return Doctrine_Core::getTable('peanutItem');
     }
+    
+    /**
+    * Retrieves item object.
+    *
+    * @param  string     $type     The type of item
+    *
+    * @return peanutItem
+    */
+    public function getItem($lang = null, $type = null)
+    {
+      $p = $this->createQuery('p')
+              ->leftJoin('p.Translation t')
+              ->leftJoin('p.sfGuardUser s')
+              ->leftJoin('p.peanutMenu m')
+              ->leftJoin('m.Translation mt')
+              ->orderBy('p.position ASC');
+
+      if(null !== $lang)
+      {
+        $p->andWhere('t.lang = ?', $lang);
+        $p->andWhere('mt.lang = ?', $lang);
+      }
+
+      if(null !== $type)
+      {
+        $p->andWhere('p.type = ?', $type);
+      }
+
+      return $p;
+    }
 }

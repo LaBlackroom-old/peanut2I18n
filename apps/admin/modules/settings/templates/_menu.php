@@ -22,5 +22,8 @@
     <li>
       <a href="<?php echo url_for('settings', array('action' => 'lang')); ?>" title="<?php echo __('Link to', null, 'peanutCorporate') ?>"><?php echo __('Your Language'); ?></a>
     </li>
+    <li>
+      <a href="<?php echo url_for('settings', array('action' => 'firstlang')); ?>" title="<?php echo __('Link to', null, 'peanutCorporate') ?>"><?php echo __('The First Language'); ?></a>
+    </li>
   </ul>
 </nav>

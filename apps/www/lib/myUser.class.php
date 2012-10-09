@@ -12,8 +12,14 @@ class myUser extends sfBasicSecurityUser
     }
     
     $this->setAttribute('first_request', $boolean);
-    $this->setCulture('en');
-    
+
+    if(peanutConfig::get('firstlang')):
+      $lang = strtolower(peanutConfig::get('firstlang'));
+    else:  
+      $lang = 'fr';
+    endif;
+
+    $this->setCulture($lang); 
   }
   
 }

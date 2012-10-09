@@ -30,6 +30,14 @@ class sfGuardUserTable extends PluginsfGuardUserTable
     return $p;
   }
   
+  public function getUsersWhereGroupIs($id)
+  {
+    $p = $this->getUser()
+            ->andWhere('g.id = ?', $id);
+    
+    return $p;
+  }
+  
   /*
    * 
    */

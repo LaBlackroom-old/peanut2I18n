@@ -75,7 +75,7 @@ install_git peanutCorporatePlugin git://github.com/LaBlackroom/peanutCorporatePl
 install_git csDoctrineActAsSortablePlugin git://github.com/LaBlackroom/csDoctrineActAsSortablePlugin.git master
 
 # sfCKEditorPlugin
-install_git sfCKEditorPlugin git://github.com/weaverryan/sfCKEditorPlugin.git master
+install_git sfCKEditorPlugin git://github.com/LaBlackroom/sfCKEditorPlugin.git master
 
 # peanutFormPlugin
 install_git peanutFormPlugin git://github.com/LaBlackroom/peanutFormPlugin.git master
@@ -84,25 +84,10 @@ install_git peanutFormPlugin git://github.com/LaBlackroom/peanutFormPlugin.git m
 install_git peanutSeoPlugin git://github.com/LaBlackroom/peanutSeoPlugin.git i18n
 
 # sfFormExtraPlugin
-install_git sfFormExtraPlugin git://github.com/diem-project/sfFormExtraPlugin.git master
-
-# ndMediaI18nPlugin
-install_git ndMediaI18nPlugin git://git.rufus.lan/plugins-symfony/ndmediai18nplugin.git  master
-
-# ndPortfolioI18nPlugin
-install_git ndPortfolioI18nPlugin git://git.rufus.lan/plugins-symfony/ndportfolioi18nplugin.git master
-
-# sfDoctrineActAsTaggablePlugin
-install_git sfDoctrineActAsTaggablePlugin git://git.rufus.lan/plugins-symfony/sfdoctrineactastaggableplugin.git master
+install_git sfFormExtraPlugin git://github.com/LaBlackroom/sfFormExtraPlugin.git master
 
 # sfImageTransformPlugin
-install_git sfImageTransformPlugin git://git.rufus.lan/plugins-symfony/sfimagetransformplugin.git master
-
-# ndCategoriesI18nPlugin
-install_git ndCategoriesI18nPlugin git://git.rufus.lan/plugins-symfony/ndcategoriesi18nplugin.git master
-
-# ndBannerI18nPlugin
-install_git ndBannerI18nPlugin git://git.rufus.lan/plugins-symfony/ndbanneri18nplugin.git master
+install_git sfImageTransformPlugin git://github.com/LaBlackroom/sfImageTransformPlugin.git master
 
 
 cd ../..

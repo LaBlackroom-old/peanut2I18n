@@ -51,6 +51,9 @@ peanutSettings:
     name: meta_robots
     value: 'index, follow'
   peanutSettings_18:
-    name: project_per_page
-    value: 2
+    name: lang
+    value: 
+  peanutSettings_19:
+    name: firstlang
+    value: FR
   
