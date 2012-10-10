@@ -95,7 +95,7 @@ cd ../..
 
 # Admin generator
 mkdir -p $GENERATOR && cd $GENERATOR
-install_git generator git://github.com/pocky/peanutGenerator.git master
+install_git generator git://github.com/LaBlackroom/peanutGenerator.git master
 
 
 cd ../..
