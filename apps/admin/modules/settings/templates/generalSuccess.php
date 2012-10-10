@@ -33,16 +33,6 @@
                 </div>
               </div>
             </div>
-            
-            <div class="sf_admin_form_row sf_admin_text sf_admin_form_field_project_per_page">
-              <div>
-                <?php echo $form['project_per_page']->renderLabel() ?>
-                <div class="content">
-                  <?php echo $form['project_per_page']->render(array('class' => 'text-input')) ?>
-                </div>
-              </div>
-            </div>
-
           </div>
 
         </fieldset>
