@@ -14,7 +14,6 @@ default:
 
   stylesheets:
     - admin.css?v=2:                                 { media: 'screen, projection' }
-    - /ndPortfolioI18nPlugin/css/admin.css:          { media: 'screen, projection' }
     - http://fonts.googleapis.com/css?family=Oswald: { media: 'screen, project' }
     - handheld.css?v=2:                              { media: 'handheld' }
 

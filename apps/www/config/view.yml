@@ -14,10 +14,9 @@ default:
 
   stylesheets:
     - main.css?v=2:                                 { media: 'screen, projection' }
-    - /ndPortfolioI18nPlugin/css/shadowbox.css:     { media: 'screen, projection' }
     - handheld.css?v=2:                             { media: 'handheld' }
 
-  javascripts: [/ndPortfolioI18nPlugin/js/jquery.cycle.all.js, /ndPortfolioI18nPlugin/js/shadowbox.js]
+  javascripts: []
     
 
   has_layout:      true

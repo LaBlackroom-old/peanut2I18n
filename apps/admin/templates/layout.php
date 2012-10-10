@@ -46,8 +46,8 @@
         <h2><?php echo __('functionnalities') ?></h2>
         <?php include_component('adminMenu', 'menu') ?>
         <?php include_component('adminItem', 'menu') ?>
-        <?php include_component('adminObject', 'menu') ?>
-        <?php include_component('adminActu', 'menu') ?>
+
+        <?php include_component('adminMovie', 'menu') ?>
         
         <?php if($sf_user->hasPermission('1')): ?>
 
