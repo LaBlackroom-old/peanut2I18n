@@ -85,8 +85,5 @@ class langSettingsForm extends peanutSettingsForm
     }
     
     $this->widgetSchema['lang']->setDefault($default);
-    
-    
-    
   }
 }
