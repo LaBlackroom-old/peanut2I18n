@@ -30,7 +30,13 @@ class ProjectConfiguration extends sfProjectConfiguration
         'peanutCorporatePlugin',
         'peanutFormPlugin',
         'peanutSeoPlugin',
-        'sfImageTransformPlugin'
+        'sfImageTransformPlugin',
+        'ndPortfolioI18nPlugin',
+        'ndMediaI18nPlugin', 
+        'sfDoctrineActAsTaggablePlugin', 
+        'sfImageTransformPlugin', 
+        'ndCategoriesI18nPlugin',
+        'ndAdminDesignPlugin'
     ));
     
     $this->dispatcher->connect('context.load_factories', array($this, 'listenToLoadFactoriesEvent'));

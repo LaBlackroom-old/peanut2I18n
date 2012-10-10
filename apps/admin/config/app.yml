@@ -11,3 +11,12 @@ all:
     mail:             ~
     password:         ~
     tracking:         ~
+
+  sfImageTransformPlugin:
+    default_adapter: GD
+    default_image:
+      mime_type: image/png
+      filename: Untitled.png
+    mime_type:
+      auto_detect: true
+      library: gd_mime_type

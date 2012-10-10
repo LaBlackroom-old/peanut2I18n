@@ -46,6 +46,7 @@
         <h2><?php echo __('functionnalities') ?></h2>
         <?php include_component('adminMenu', 'menu') ?>
         <?php include_component('adminItem', 'menu') ?>
+        <?php include_component('adminPortfolio', 'fullmenu') ?>
         
         <?php if($sf_user->hasPermission('1')): ?>
 

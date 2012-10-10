@@ -56,4 +56,9 @@ peanutSettings:
   peanutSettings_19:
     name: firstlang
     value: FR
-  
+  peanutSettings_20:
+    name: project_per_page
+    value: 2
+  peanutSettings_21:
+    name: interface
+    value: 
