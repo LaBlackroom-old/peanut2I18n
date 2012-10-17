@@ -44,10 +44,66 @@ class sfGuardUserTable extends PluginsfGuardUserTable
   /*
    * 
    */
+  public function getUsersWithPermission($idPerm)
+  {
+    $p = $this->getUser()->addSelect('id')
+              ->andWhere('s.id = ?', $idPerm);
+    
+    return $p;
+  }
+  
+  /*
+   * 
+   */
+  public function getFullUsers($active = true)
+  {
+    $p = $this->getUsers()
+            ->leftJoin('g.Permissions gs');
+    
+    return $p;
+  }
+  
+  /*
+   * 
+   */
   public function getLastUsers($limit = 5, $active = true)
   {
     $p = $this->getUsers($active)
             ->limit($limit);
+    
+    return $p;
+  }
+  
+  public function getUsersWhereGroupIs($group, $active = true)
+  {
+    $p = $this->getUsers($active)
+            ->where('g.name = ? OR g.id = ?', array($group, $group));
+    
+    return $p;
+  }
+  
+  public function getUsersWherePermissionIs($permissions, $excludes = null, $active = true)
+  {
+    $or = 's.id = ?';  
+    for($i = 0; $i < count($permissions)-1; $i++){
+      $or .= ' OR s.id = ?';
+    }
+
+    $p = $this->getUsers($active)
+              ->addWhere($or, $permissions);
+  
+    if(null != $excludes){
+      foreach ($excludes as $exclude){
+        $p->addWhere('s.id <> ?', $exclude);
+      }
+    }
+    return $p;
+  }
+  
+  public function getUsersWithId($id, $active = true)
+  {
+    $p = $this->getUsers($active)
+              ->where('p.id = ?', $id);
     
     return $p;
   }

@@ -46,7 +46,7 @@
   <script>   
     $(document).ready(function(){
       var color = "<?php echo $interface['color'] ?>";
-      $('body').css('background', '#000')
+      $('body').css('background', color)
     });
   </script>
 <?php endif; ?>

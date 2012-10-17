@@ -4,6 +4,8 @@
     <h1><?php echo __('About your society') ?></h1>
   </header>
   
+  <?php if($sf_user->hasPermission('4') || $sf_user->hasPermission('5')){ ?>
+    
   <section id="sf_admin_header"></section>
   
   <section id="sf_admin_content">
@@ -105,3 +107,14 @@
   </section>
   
 </section>
+
+<?php  
+}
+else{
+?>
+  <div class="sorry sf_admin_form">
+    <?php echo __('Sorry, but you do not have access rights to this part.', null, 'sfGuard') ?>.. Cheater !
+  </div>    
+<?php
+}
+?>

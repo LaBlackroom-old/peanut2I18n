@@ -30,7 +30,7 @@ peanutSettings:
     name: google_tracking
     value: ''
   peanutSettings_11:
-    name: google_guid
+    name: google_guid_wt
     value: ''
   peanutSettings_12:
     name: news_feed
@@ -57,8 +57,41 @@ peanutSettings:
     name: firstlang
     value: FR
   peanutSettings_20:
+    name: contact_from
+    value: noreply@peanut2.local
+  peanutSettings_21:
+    name: webmaster_name
+    value: webmaster
+  peanutSettings_22:
+    name: webmaster_mail
+    value: webmaster@peanut2.local
+  peanutSettings_23:
+    name: subject
+    value: 'Nouveau message de peanut2.local'
+  peanutSettings_24:
+    name: map_name
+    value: googlemap
+  peanutSettings_25:
+    name: map_center
+    value: Paris
+  peanutSettings_26:
+    name: map_address
+    value: '77 boulebard Exelmans 75016 Paris'
+  peanutSettings_27:
+    name: map_zoom
+    value: '13'
+  peanutSettings_28:
+    name: map_size
+    value: 512x288
+  peanutSettings_29:
+    name: google_guid_ga
+    value: ''
+  peanutSettings_30:
+    name: domain_name
+    value: peanut.local
+  peanutSettings_31:
     name: project_per_page
     value: 2
-  peanutSettings_21:
+  peanutSettings_32:
     name: interface
     value: 

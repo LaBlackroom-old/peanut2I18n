@@ -65,6 +65,10 @@ install_git peanutHtml5Plugin git://github.com/LaBlackroom/peanutHtml5Plugin.git
 # sfDoctrineGuardPlugin
 install_git sfDoctrineGuardPlugin git://github.com/LaBlackroom/sfDoctrineGuardPlugin.git master
 
+# peanutAssetPlugin
+install_git peanutAssetPlugin git://github.com/LaBlackroom/peanutAssetPlugin.git master
+
+
 # sfTaskExtraPlugin
 install_git sfTaskExtraPlugin git://github.com/LaBlackroom/sfTaskExtraPlugin.git master
 

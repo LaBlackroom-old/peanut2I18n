@@ -51,6 +51,8 @@ class BaseSettingsActions extends sfActions
       {
         $interface = array();
         
+        echo "<pre>"; print_r($this->form->getValues()); echo "</pre>";
+        
         foreach($this->form->getValues() as $name => $value)
         {
           if($name == 'logo' || $name == 'background'){ 

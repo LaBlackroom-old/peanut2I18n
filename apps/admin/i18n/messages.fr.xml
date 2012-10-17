@@ -498,6 +498,50 @@
         <source>Your meta language</source>
         <target>La langue de votre site</target>
       </trans-unit>
+      <trans-unit>
+        <source>Contact settings</source>
+        <target>Paramètres de contact</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Your email</source>
+        <target>Votre adresse mail</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The webmaster name</source>
+        <target>Le nom du webmaster</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The webmaster email</source>
+        <target>l'adresse mail du webmaster</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Subject</source>
+        <target>Le sujet du mail</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Google map name</source>
+        <target>Le nom de la Google Map</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Google map center</source>
+        <target>Le centre de la Google Map</target>
+      </trans-unit> 
+      <trans-unit>
+        <source>Google map address</source>
+        <target>L'adresse de la Google Map</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Google map zoom</source>
+        <target>Le niveau de zoom de la Google Map</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Google map size</source>
+        <target>La taille de la Google Map</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Here are the parameters of contact, they are used to the contact form but also for the visibility of your company.</source>
+        <target>Voici les paramètres de contact, ils sont utilisés pour le formulaire de contact mais aussi pour la visibilité de votre société.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

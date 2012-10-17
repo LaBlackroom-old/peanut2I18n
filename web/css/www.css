@@ -1,0 +1,36 @@
+@import '/peanutAssetPlugin/css/lib/boilerplate.css';
+@import '/peanutAssetPlugin/css/lib/grid.css';
+@import '/peanutAssetPlugin/css/lib/bic.css';
+
+@import '/peanutAssetPlugin/css/no_skype.css';
+@import '/peanutAssetPlugin/css/fontface.css';
+
+/* ---------------------- C'est ici que tout commence ! --------------------- */
+
+/* ---------------------------------- MAIN ---------------------------------- */
+
+
+
+
+/*
+ * media queries for responsive design
+ * these follow after primary styles so they will successfully override.
+ */
+
+@media all and (orientation:portrait) {
+  /* style adjustments for portrait mode goes here */
+
+}
+
+@media all and (orientation:landscape) {
+  /* style adjustments for landscape mode goes here */
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+
+  /* uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+     j.mp/textsizeadjust
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}

@@ -142,7 +142,8 @@ p{margin:0.75em 0;line-height:1.5em;}p small{font-size:0.8em;line-height:1.3em;}
 a{color:#006aa9;}a:visited{color:#0074b3;}
 a:hover{color:#004c8b;}
 b,strong{font-weight:500;}
-h1,h2,h3,h4,h5,h6{text-rendering:optimizelegibility;color:#333333;margin:0;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-size:normal;color:#999999;}
+h1,h2,h3,h4,h5,h6{text-rendering:optimizelegibility;color:#333333;margin:0;}
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-size:normal;color:#999999;}
 h1{font-size:3em;line-height:3em;}h1 small{font-size:0.5em;line-height:1.5em;}
 h2{font-size:2em;line-height:3em;}h2 small{font-size:0.5em;}
 h3{font-size:1.7em;line-height:2.25em;}h3 small{font-size:0.5em;}

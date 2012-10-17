@@ -23,7 +23,9 @@ Installation du Plugin AdminDesign (qui permet de designer l'interface d'adminis
 
 8. Dans data/fixtures/peanutSettings.yml, ajouter un champ "interface"
 
-    a:2:{s:5:"title";s:18:"Peanut2 Revolution";s:5:"color";s:7:"#f0017a";}
+    peanutSettings_21:
+      name: interface
+      value: a:2:{s:5:"title";s:18:"Peanut2 Revolution";s:5:"color";s:7:"#f0017a";}
 
 
 9. Dans le fichier apps/admin/config/app.yml, ajouter :

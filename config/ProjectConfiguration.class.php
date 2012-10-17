@@ -30,6 +30,7 @@ class ProjectConfiguration extends sfProjectConfiguration
         'peanutCorporatePlugin',
         'peanutFormPlugin',
         'peanutSeoPlugin',
+        'peanutAssetPlugin',
         'sfImageTransformPlugin',
         'ndPortfolioI18nPlugin',
         'ndMediaI18nPlugin', 
