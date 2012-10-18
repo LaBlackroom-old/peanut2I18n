@@ -105,6 +105,9 @@ install_git sfDoctrineActAsTaggablePlugin git://git.rufus.lan/plugins-symfony/sf
 # ndCategoriesI18nPlugin
 install_git ndCategoriesI18nPlugin git://git.rufus.lan/plugins-symfony/ndcategoriesi18nplugin.git master
 
+# ndAdminDesignPlugin
+install_git ndAdminDesignPlugin git://github.com/ndachez/ndAdminDesignPlugin.git master
+
 cd ../..
 
 
