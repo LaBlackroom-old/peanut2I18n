@@ -4,6 +4,11 @@
   <file original="global" source-language="en" datatype="plaintext">
     <header/>
     <body>
+      
+      <trans-unit>
+        <source>About your interface</source>
+        <target>Gestion de l'interface de connexion</target>
+      </trans-unit>
       <trans-unit>
         <source>Information from the connection interface can be modified so that you can have a custom login interface.</source>
         <target>Les informations de l'interface de connexion peuvent être modifié ce qui vous permettra d'avoir une interface de connexion personnalisée.</target>

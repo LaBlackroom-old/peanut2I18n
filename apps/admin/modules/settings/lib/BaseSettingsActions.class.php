@@ -20,21 +20,24 @@ class BaseSettingsActions extends sfActions
       if($this->form->isValid())
       {
         $interface = array();
+        $bdd = unserialize(peanutConfig::get('interface'));
         
         foreach($this->form->getValues() as $name => $value)
         {
           if($name == 'logo' || $name == 'background'){ 
-            if($value){
+            if($value){ 
               $extension = $value->getExtension($value->getOriginalExtension());
               $value->save(sfConfig::get('sf_upload_dir') . '/admin/' . $value->getOriginalName());
               $interface[$name] = $value->getOriginalName();
+            }
+            else{
+              $interface[$name] = $bdd[$name];
             }
           }
           else{
             $interface[$name] = $value;
           }
         }
-
         peanutConfig::set('interface', serialize($interface));
         
       }
@@ -52,8 +55,25 @@ class BaseSettingsActions extends sfActions
       
       if($this->form->isValid())
       {
+
+        if($this->form->getValue('lang')){
+        
+          $options = $this->form->getWidgetSchema()->getFields();
+          $options = $options['lang']->getChoices();
+
+          foreach($this->form->getValue('lang') as $language){
+            $trad[] = $options[$language];
+          }
+          $lang = $this->form->getValue('lang');
+        }
+        else{
+          $trad = "Français";
+          $lang = array('FR');
+        }
+        
         $lang = array(
-          'lang'  => $this->form->getValue('lang'),
+          'lang'  => $lang,
+          'trad'  => $trad
         );
         peanutConfig::set('lang', serialize($lang));
         

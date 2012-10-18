@@ -6,6 +6,8 @@
   
   <?php if($sf_user->hasPermission('5') || $sf_user->hasPermission('4')){ ?>
 
+    <?php $interface = unserialize(peanutConfig::get('interface')); ?>
+
     <section id="sf_admin_header"></section>
 
     <section id="sf_admin_content">
@@ -31,7 +33,13 @@
                 <div>
                   <?php echo $form['logo']->renderLabel() ?>
                   <div class="content">
-                    <?php echo $form['logo']->render(array('class' => 'text-input')) ?>
+                    <div class="content">
+                    <?php if(isset($interface['logo']) && $interface['logo'] != ""): ?>
+                      <?php $form->setDefault('logo', $interface['logo']); ?>
+                      <img style="width: 685px;" src="/uploads/admin/<?php echo $interface['logo'] ?>"> 
+                    <?php endif;?>
+                      <?php echo $form['logo']->render(array('class' => 'text-input')) ?>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -44,12 +52,16 @@
                   </div>
                 </div>
               </div>
-              
+   
               <div class="sf_admin_form_row sf_admin_text sf_admin_form_field_background">
                 <div>
                   <?php echo $form['background']->renderLabel() ?>
                   <div class="content">
-                    <?php echo $form['background']->render(array('class' => 'text-input')) ?>
+                    <?php if(isset($interface['background'])): ?>
+                      <?php $form->setDefault('background', $interface['background']); ?>
+                      <img style="width: 685px;" src="/uploads/admin/<?php echo $interface['background'] ?>"> 
+                    <?php endif;?>
+                      <?php echo $form['background']->render(array('class' => 'text-input')) ?>
                   </div>
                 </div>
               </div>

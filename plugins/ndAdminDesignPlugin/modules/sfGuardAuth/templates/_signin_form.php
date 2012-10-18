@@ -3,8 +3,9 @@
 <h1 class="nohidden"><?php echo __('Administration interface') ?> | <?php echo $interface['title'] ?></h1>
 <div class="logo">
   <?php
+    $logo = (isset($interface['logo'])) ? $interface['logo'] : '';
     echo showThumb(
-      $interface['logo'], 
+      $logo, 
       'admin', 
       $options = array(
           'width' => '500', 
@@ -35,11 +36,12 @@
 </form>
 
 
-<?php if($interface['background']): ?>
+<?php if(isset($interface['background'])): ?>
   <script>
     $(document).ready(function(){
-      var background = "<?php echo $interface['background'] ?>";
-      $('body').css('background-image', 'url(/uploads/admin/'+background+')')
+      var background = "/uploads/admin/<?php echo $interface['background'] ?>";
+      console.log(background);
+      $('body').css('background', 'url(/uploads/admin/<?php echo $interface['background'] ?>)')
     });
   </script>
 <?php elseif($interface['color']): ?>

@@ -36,6 +36,7 @@
   </head>
 
   <body>
+    <?php include_component('language','language') ?>
     <?php echo $sf_content ?>
 
     <!--[if lt IE 7 ]>

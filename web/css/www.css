@@ -10,6 +10,11 @@
 /* ---------------------------------- MAIN ---------------------------------- */
 
 
+.language {width: 60%; text-align: right; margin-right: 15px; margin-top: 10px;}
+.language ul {width: 100%; margin: 0;}
+.language ul li {display:inline; list-style:none; font-size: 11px; color:#7c7c7c;}
+.language ul li a{text-decoration: none; padding:0 2px; text-transform: uppercase;}
+.language ul li.current a, .language ul li:hover a{ background: #E6E6E6; }
 
 
 /*
