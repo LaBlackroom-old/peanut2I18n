@@ -32,7 +32,7 @@ publish
 build/buildinfo.properties
 
 # symfony files and folders
-web/uploads/*
+#web/uploads/*
 cache/*
 log/*
 config/databases.yml
