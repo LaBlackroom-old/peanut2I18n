@@ -1,54 +1,53 @@
-<?php $interface = unserialize(peanutConfig::get('interface')); ?>
+<form action="<?php echo url_for('@sf_guard_signin') ?>" method="post">
+  
+  <?php if($form['username']->hasError() || $form['password']->hasError()): ?>
+  <section class="notification error">
+    <p>
+      <?php foreach($form['username']->getError() as $error): ?>
+        <?php echo __('Username') ?>: <?php echo $error ?><br />
+      <?php endforeach; ?>
+      
+      <?php echo __('Password') ?>: <?php echo $form['password']->getError() ?><br />
+    </p>
+  </section>
+  <?php endif; ?>
+  
+  <?php if($sf_user->hasFlash('notice')): ?>
+  <section class="notification notice">
+    <p><?php echo __($sf_user->getFlash('notice'), null, 'sf_guard') ?></p>
+  </section>
+  <?php endif; ?>
+  
+  <?php if($sf_user->hasFlash('error')): ?>
+  <section class="notification error">
+    <p><?php echo __($sf_user->getFlash('error'), null, 'sf_guard') ?></p>
+  </section>
+  <?php endif; ?>
+  
+  <section class="clearfix container">
+    <p><?php echo $form['username']->render() ?></p>
+    <p><?php echo $form['password']->render() ?></p>
+    <p class="grid_3 alpha omega">
+      <?php echo $form['remember']->renderLabel($label = __('Remember me', null, 'sf_guard'), array('class' => 'floatRight')) ?>
+      <?php echo $form['remember']->render() ?>
+    </p>
 
-<h1 class="nohidden"><?php echo __('Administration interface') ?> | <?php echo $interface['title'] ?></h1>
-<div class="logo">
-  <?php
-    $logo = (isset($interface['logo'])) ? $interface['logo'] : '';
-    echo showThumb(
-      $logo, 
-      'admin', 
-      $options = array(
-          'width' => '500', 
-          'height' => '150', 
-          'alt' => $interface['title'],
-          'itemprop' => 'image'
-      ), 
-      $resize = 'center', 
-      $default = 'default_logo.png'
-    );
-  ?>
-</div>
-
-<form class="box login" action="<?php echo url_for('@sf_guard_signin') ?>" method="post">
-  <fieldset class="boxBody">
-    <label><?php echo __('Username') ?></label><?php echo $form['username']->render() ?>
-    <label><?php echo __('Password') ?></label><?php echo $form['password']->render() ?>
     <?php echo $form->renderHiddenFields(); ?>
-  </fieldset>
-  <footer>
-    <input type="submit" class="btnLogin" value="<?php echo __('Login') ?>" tabindex="4">
-    <?php if($form['username']->hasError() || $form['password']->hasError()): ?>
-    <div class="error">
-      <?php echo __('Username and / or password unknown') ?> <?php echo $form['password']->getError() ?>
-    </div>
-  <?php endif; ?> 
-  </footer>
+  </section>
+  
+  <p class="clearfix">
+    <input type="submit" value="<?php echo __('Signin', null, 'sf_guard') ?>" />
+  </p>
+    
+  <p class="floatRight">
+    <?php $routes = $sf_context->getRouting()->getRoutes() ?>
+    <?php if (isset($routes['sf_guard_forgot_password'])): ?>
+      <a href="<?php echo url_for('@sf_guard_forgot_password') ?>"><?php echo __('Forgot your password?', null, 'sf_guard') ?></a>
+    <?php endif; ?>
+
+    <?php if (isset($routes['sf_guard_register'])): ?>
+      &nbsp; <a href="<?php echo url_for('@sf_guard_register') ?>"><?php echo __('Want to register?', null, 'sf_guard') ?></a>
+    <?php endif; ?>
+  </p>
+  
 </form>
-
-
-<?php if(isset($interface['background'])): ?>
-  <script>
-    $(document).ready(function(){
-      var background = "/uploads/admin/<?php echo $interface['background'] ?>";
-      console.log(background);
-      $('body').css('background', 'url(/uploads/admin/<?php echo $interface['background'] ?>)')
-    });
-  </script>
-<?php elseif($interface['color']): ?>
-  <script>   
-    $(document).ready(function(){
-      var color = "<?php echo $interface['color'] ?>";
-      $('body').css('background', color)
-    });
-  </script>
-<?php endif; ?>

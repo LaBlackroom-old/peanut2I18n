@@ -1,7 +1,7 @@
 peanutSettings:
   peanutSettings_1:
     name: site_name
-    value: 'peanut'
+    value: 'peanut2 i18n'
   peanutSettings_2:
     name: meteo
     value: 'Paris, France'
@@ -46,13 +46,13 @@ peanutSettings:
     value: ''
   peanutSettings_16:
     name: meta_language
-    value: 'fr_FR'
+    value: fr_FR
   peanutSettings_17:
     name: meta_robots
     value: 'index, follow'
   peanutSettings_18:
     name: lang
-    value: 
+    value: 'a:2:{s:4:"lang";a:1:{i:0;s:2:"FR";}s:4:"trad";s:9:"Français";}'
   peanutSettings_19:
     name: firstlang
     value: FR
@@ -89,9 +89,3 @@ peanutSettings:
   peanutSettings_30:
     name: domain_name
     value: peanut.local
-  peanutSettings_31:
-    name: project_per_page
-    value: 2
-  peanutSettings_32:
-    name: interface
-    value: 

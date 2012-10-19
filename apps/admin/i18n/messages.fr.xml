@@ -5,6 +5,10 @@
     <header/>
     <body>
       <trans-unit>
+        <source>News feed</source>
+        <target>RSS</target>
+      </trans-unit>
+      <trans-unit>
         <source>sk</source>
         <target>Albanais</target>
       </trans-unit>
@@ -395,6 +399,10 @@
         <target>Votre société</target>
       </trans-unit>
       <trans-unit>
+        <source>About your society</source>
+        <target>Paramètres de votre société</target>
+      </trans-unit>
+      <trans-unit>
         <source>Society</source>
         <target>Société</target>
       </trans-unit>
@@ -447,8 +455,16 @@
         <target>Votre compte Google</target>
       </trans-unit>
       <trans-unit>
-        <source>Your GUID (google analytics)</source>
-        <target>Votre GUID (Google analytics)</target>
+        <source>Your GUID (Google Analytics)</source>
+        <target>Votre GUID (Google Analytics)</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Your GUID (Google Webmaster Tools)</source>
+        <target>Votre GUID (Google Webmaster Tools)</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Your domain name (without www)</source>
+        <target>Votre nom de domaine (sans le www)</target>
       </trans-unit>
       <trans-unit>
         <source>The id of the site you want to track (webmaster tools)</source>
@@ -497,6 +513,10 @@
       <trans-unit>
         <source>Your meta language</source>
         <target>La langue de votre site</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Contact config</source>
+        <target>Paramètres de contact</target>
       </trans-unit>
       <trans-unit>
         <source>Contact settings</source>

@@ -1,0 +1,63 @@
+peanutSeo:
+  peanutSeo_1:
+    is_indexable: '1'
+    is_followable: '1'
+  peanutSeo_2:
+    is_indexable: '1'
+    is_followable: '1'
+  peanutSeo_3:
+    is_indexable: '1'
+    is_followable: '1'
+  peanutSeo_4:
+    is_indexable: '1'
+    is_followable: '1'
+peanutSeoTranslation:
+  peanutSeoTranslation_1_fr:
+    peanutSeo: peanutSeo_1
+    title: ''
+    description: ''
+    keywords: ''
+    lang: fr
+  peanutSeoTranslation_2_fr:
+    peanutSeo: peanutSeo_2
+    title: ''
+    description: ''
+    keywords: ''
+    lang: fr
+  peanutSeoTranslation_3_fr:
+    peanutSeo: peanutSeo_3
+    title: ''
+    description: ''
+    keywords: ''
+    lang: fr
+  peanutSeoTranslation_4_fr:
+    peanutSeo: peanutSeo_4
+    title: ''
+    description: ''
+    keywords: ''
+    lang: fr
+peanutXfn:
+  peanutXfn_1:
+    me: false
+    friendship: ''
+    physical: ''
+    professional: ''
+    geographical: ''
+    family: ''
+    romantic: ''
+  peanutXfn_2:
+    me: false
+    friendship: ''
+    physical: ''
+    professional: ''
+    geographical: ''
+    family: ''
+    romantic: ''
+  peanutXfn_3:
+    me: false
+    friendship: ''
+    physical: ''
+    professional: ''
+    geographical: ''
+    family: ''
+    romantic: ''

@@ -68,7 +68,6 @@ install_git sfDoctrineGuardPlugin git://github.com/LaBlackroom/sfDoctrineGuardPl
 # peanutAssetPlugin
 install_git peanutAssetPlugin git://github.com/LaBlackroom/peanutAssetPlugin.git master
 
-
 # sfTaskExtraPlugin
 install_git sfTaskExtraPlugin git://github.com/LaBlackroom/sfTaskExtraPlugin.git master
 
@@ -92,21 +91,6 @@ install_git sfFormExtraPlugin git://github.com/LaBlackroom/sfFormExtraPlugin.git
 
 # sfImageTransformPlugin
 install_git sfImageTransformPlugin git://github.com/LaBlackroom/sfImageTransformPlugin.git master
-
-# ndPortfolioI18nPlugin
-install_git ndPortfolioI18nPlugin git://git.rufus.lan/plugins-symfony/ndportfolioi18nplugin.git master
-
-# ndMediaI18nPlugin
-install_git ndMediaI18nPlugin git://git.rufus.lan/plugins-symfony/ndmediai18nplugin.git master
-
-# sfDoctrineActAsTaggablePlugin
-install_git sfDoctrineActAsTaggablePlugin git://git.rufus.lan/plugins-symfony/sfdoctrineactastaggableplugin.git master
-
-# ndCategoriesI18nPlugin
-install_git ndCategoriesI18nPlugin git://git.rufus.lan/plugins-symfony/ndcategoriesi18nplugin.git master
-
-# ndAdminDesignPlugin
-install_git ndAdminDesignPlugin git://github.com/ndachez/ndAdminDesignPlugin.git master
 
 cd ../..
 

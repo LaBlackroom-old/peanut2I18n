@@ -19,10 +19,6 @@ class generalSettingsForm extends peanutSettingsForm
     $this->widgetSchema['meteo'] = new sfWidgetFormHtml5InputText();
     $this->widgetSchema['meteo']->setDefault(peanutConfig::get('meteo'));
     
-    $this->widgetSchema['project_per_page'] = new sfWidgetFormHtml5InputText();
-    $this->widgetSchema['project_per_page']->setDefault(peanutConfig::get('project_per_page'));
-    $this->widgetSchema['project_per_page']->setLabel('Project per page');
-    
     $this->widgetSchema['news_feed'] = new sfWidgetFormHtml5InputText();
     $this->widgetSchema['news_feed']->setDefault(peanutConfig::get('news_feed'));
   }

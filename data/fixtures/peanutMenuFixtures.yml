@@ -1,15 +1,24 @@
 peanutMenu:
   peanutMenu_1:
-    name: TopMenu
     slug: topmenu
     root_id: '1'
     lft: '1'
     rgt: '4'
     level: '0'
   peanutMenu_2:
-    name: FooterMenu
     slug: footermenu
     root_id: '2'
     lft: '1'
     rgt: '2'
     level: '0'
+peanutMenuTranslation:
+  peanutMenuTranslation_1_fr:
+    peanutMenu: peanutMenu_1
+    name: TopMenu
+    lang: fr
+    slug: topmenu
+  peanutMenuTranslation_2_fr:
+    peanutMenu: peanutMenu_2
+    name: FooterMenu
+    lang: fr
+    slug: footermenu

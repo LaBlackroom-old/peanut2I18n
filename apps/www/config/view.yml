@@ -15,12 +15,10 @@ default:
   stylesheets:
     - www.css?v=2:                              { media: 'screen, projection' }
     #- www-handheld.css?v=2:                     { media: 'handheld' }
-    - /ndPortfolioI18nPlugin/css/shadowbox.css: { media: 'screen, projection' }
-    - /ndPortfolioI18nPlugin/css/admin.css:     { media: 'screen, projection' }
     - jquery-ui-1.8.16.custom.css:              { media: 'screen, projection' }
-    - /css/admin.css:                           { media: 'screen, projection' }
     
-  javascripts: [/ndPortfolioI18nPlugin/js/jquery.cycle.all.js, /ndPortfolioI18nPlugin/js/shadowbox.js]
+    
+  javascripts: []
     
 
   has_layout:      true
